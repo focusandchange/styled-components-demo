@@ -15,4 +15,4 @@ export const formatTimeStamp = (timeStamp: number) => {
  * @param {number} currentTime 
  * @param {number} endTime 
  */
-export const getTimeStampInterval = (currentTime: number, espiresTime: number) => espiresTime - currentTime;
+export const getTimeStampInterval = (currentTime: number, expiresTime: number) => expiresTime - currentTime;

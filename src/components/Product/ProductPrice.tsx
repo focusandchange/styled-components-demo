@@ -1,11 +1,15 @@
 import React, { PropsWithChildren } from 'react';
 import styled from 'styled-components';
+import { ProductDiscount } from './ProductDiscount';
 
 interface PriceProps {
   discount?: boolean
-  priceMin: number
-  priceMax: number
-  [propName: string]: any
+}
+
+interface ProductPriceProps {
+  originalPrice: string; // 原价
+  discountPrice: string;// 折扣价
+  discountRate: number; // 折扣率
 }
 
 const Price = styled.span<PriceProps>`
@@ -19,13 +23,14 @@ const Price = styled.span<PriceProps>`
   position: relative;
 `;
 
-function ProductPrice({ priceMin, priceMax }: PropsWithChildren<PriceProps>) {
+export const ProductPrice = ({ originalPrice, discountPrice, discountRate }: PropsWithChildren<ProductPriceProps>) => {
   return (
-    <div>
-      <Price discount>${priceMin}</Price>
-      <Price>${priceMax}</Price>
-    </div>
+    <>
+      <div>
+        <Price discount>${ discountPrice }</Price>
+        <Price>${ originalPrice }</Price>
+      </div>
+      <ProductDiscount discountRate={ discountRate } />
+    </>
   )
-}
-
-export { ProductPrice };
+};

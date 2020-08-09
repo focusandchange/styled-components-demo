@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import styled from 'styled-components';
 
 const Discount = styled.div`
@@ -13,10 +13,12 @@ const Discount = styled.div`
   margin-top: 20px; 
 `;
 
-function ProductDiscount() {
-  return (
-    <Discount>90% OFF</Discount>
-  )
+interface ProductDiscount {
+  discountRate: number
 }
 
-export { ProductDiscount };
+export const ProductDiscount: FC<ProductDiscount> = ({ discountRate }) => {
+  return (
+    <Discount>{ discountRate * 100 }% OFF</Discount>
+  )
+};

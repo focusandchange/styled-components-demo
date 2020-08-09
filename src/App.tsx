@@ -1,14 +1,10 @@
 import React from 'react';
-import { ProductWrapper } from './components/Product/ProductWrapper';
+import { UpSell } from './pages/UpSell';
 import data from './data/product.json';
-
-let currentTime = Date.now()
 
 function App() {
   return (
-    <div>
-      <ProductWrapper currentTime={currentTime} productData={data} />
-    </div>
+    <UpSell currentTime={Date.now()} timeInterval={20000} data={data}/>
   );
 }
 

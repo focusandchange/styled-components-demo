@@ -14,9 +14,6 @@
       "sku": "26009895-tell-us-the-size-china",
       "requires_shipping": true,
       "taxable": false,
-      "price_min": 20,
-      "price_max": 30,
-      "image": "//cdn.shopifycdn.net/s/files/1/0426/7786/2549/products/product-image-1434362516.jpg?v=1594035088",
       "featured_image": {
         "id": 17775097512085,
         "product_id": 5409486962837,
@@ -59,9 +56,6 @@
       "sku": "26009895-tell-us-the-size-russian-federation",
       "requires_shipping": true,
       "taxable": false,
-      "price_min": 50,
-      "price_max": 100,
-      "image": "//cdn.shopifycdn.net/s/files/1/0426/7786/2549/products/product-image-1434362518.jpg?v=1594035089",
       "featured_image": {
         "id": 17775097512085,
         "product_id": 5409486962837,
@@ -104,9 +98,6 @@
       "sku": "26009895-tell-us-the-size-united-states",
       "requires_shipping": true,
       "taxable": false,
-      "price_min": 80,
-      "price_max": 130,
-      "image": "//cdn.shopifycdn.net/s/files/1/0426/7786/2549/products/product-image-1455908730.jpg?v=1594035090",
       "featured_image": {
         "id": 17775097512085,
         "product_id": 5409486962837,
